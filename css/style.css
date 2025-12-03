@@ -555,6 +555,7 @@ h5{
 	display: flex;
 	align-items: center;
 	gap: 16px;
+	cursor: pointer;
 }
 
 .edu-item:hover, .exp-item:hover {
@@ -585,9 +586,10 @@ h5{
 	flex-direction: column;
 }
 
-.edu-link {
-	display: inline-flex;
-	border-radius: 50%;
+.edu-item-link {
+	text-decoration: none;
+	color: inherit;
+	display: block;
 }
 
 .institution {

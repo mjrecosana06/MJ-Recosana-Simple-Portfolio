@@ -664,13 +664,26 @@ h5{
 	cursor: pointer;
 	overflow: hidden;
 	min-width: 0;
+	text-decoration: none;
+	color: inherit;
+	-webkit-tap-highlight-color: transparent;
+	touch-action: manipulation;
 }
 
-.contact-card:hover {
+.contact-card:hover,
+.contact-card:active,
+.contact-card:focus {
 	border-color: #1bd899;
 	transform: translateY(-8px);
 	box-shadow: 0 15px 35px rgba(27, 216, 153, 0.2);
 	background: linear-gradient(135deg, #1f1f1f 0%, #141414 100%);
+	outline: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+	.contact-card:active {
+		transform: translateY(-4px) scale(0.98);
+	}
 }
 
 .contact-icon-wrapper {
@@ -733,6 +746,7 @@ h5{
 	word-break: break-word;
 	overflow-wrap: break-word;
 	max-width: 100%;
+	pointer-events: none;
 }
 
 .contact-link:hover {

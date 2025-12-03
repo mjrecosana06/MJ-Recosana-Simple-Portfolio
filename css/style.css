@@ -863,6 +863,13 @@ footer p:nth-child(2){
 }
 
 @media (max-width: 768px) {
+	.hero {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/background.jpg);
+		background-attachment: scroll;
+		background-position: center top;
+		background-size: cover;
+	}
+	
 	h1 {
 		font-size: 50px;
 	}
@@ -913,6 +920,11 @@ footer p:nth-child(2){
 }
 
 @media (max-width: 480px) {
+	.hero {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)), url(../img/background.jpg);
+		background-position: center center;
+	}
+	
 	h1 {
 		font-size: 35px;
 	}

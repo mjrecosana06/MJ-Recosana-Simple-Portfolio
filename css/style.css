@@ -261,15 +261,16 @@ h4{
 	pointer-events: none;
 }
 .about img{
-	height: auto;
+	height: 430px;
 	width: 430px;
-	border-radius: 20px;
+	border-radius: 50%;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 	transition: all 0.5s ease;
 	border: 3px solid transparent;
 	background: linear-gradient(135deg, #E63B7A, #1bd899);
 	background-clip: padding-box;
 	padding: 3px;
+	object-fit: cover;
 }
 
 .about img:hover {
@@ -696,6 +697,31 @@ h5{
 	transform: translateY(-3px);
 	box-shadow: 0 10px 25px rgba(27, 216, 153, 0.5);
 }
+
+.contact-buttons {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 1;
+	margin-top: 10px;
+}
+
+.contact-me .button-two.github-button {
+	background-color: #333;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-me .button-two.github-button:hover {
+	background: linear-gradient(135deg, #333, #555);
+	border-color: #1bd899;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.contact-me .button-two i {
+	margin-right: 8px;
+}
 footer{
 	position: relative;
 	width: 100%;
@@ -900,8 +926,10 @@ footer p:nth-child(2){
 	}
 	
 	.about img {
-		width: 100%;
+		width: 300px;
+		height: 300px;
 		max-width: 300px;
+		border-radius: 50%;
 	}
 	
 	.about-text h2 {
